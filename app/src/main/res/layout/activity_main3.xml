@@ -5,31 +5,32 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main2Activity">
-
+    tools:context=".Main3Activity">
 
     <TextView
         android:layout_width="match_parent"
-        android:text="DIGITE TEMP EM CELCIUS"
+        android:textColor="@color/black"
+        android:text="Valor em Fahrenheit"
         android:gravity="center"
         android:textSize="28sp"
-        android:textColor="@color/black"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
-    <EditText
-        android:id="@+id/txtTempC"
+    <TextView
         android:layout_width="match_parent"
         android:textColor="@color/black"
+        android:text=""
+        android:gravity="center"
         android:textSize="28sp"
-        android:inputType="numberDecimal"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
     <Button
         android:layout_width="match_parent"
         android:textColor="@color/black"
         android:textSize="28sp"
-        android:onClick="calClick"
-        android:text="CALCULAR"
+        android:onClick="voltaCelsius"
+        android:text="Voltar para Celsius"
         android:layout_height="wrap_content" />
+
+
 
 </LinearLayout>

@@ -2,6 +2,7 @@ package com.m79196.pdmaula2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -69,5 +70,15 @@ public class Main2Activity extends AppCompatActivity {
     public void calClick(View view) {
         String s = tempC.getText().toString();
         Toast.makeText(this,s, Toast.LENGTH_SHORT).show();
+
+        double valor  = Double.parseDouble(tempC.getText().toString());
+
+
+        Intent intent  = new Intent(Main2Activity.this,
+                Main3Activity.class);
+        startActivity(intent);
+
+
+
     }
 }

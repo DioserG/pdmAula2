@@ -14,4 +14,4 @@
         android:onClick="aula2Click"
         android:text="AULA 2" />
 
-    </LinearLayout>
+</LinearLayout>
