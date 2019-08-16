@@ -15,6 +15,7 @@ public class Main2Activity extends AppCompatActivity {
     final String TAG = "CICLO";
     private EditText tempC;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -69,15 +70,23 @@ public class Main2Activity extends AppCompatActivity {
 
     public void calClick(View view) {
         String s = tempC.getText().toString();
-        Toast.makeText(this,s, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this,s, Toast.LENGTH_SHORT).show();
 
         double valor  = Double.parseDouble(tempC.getText().toString());
-
+        double f;
+        f= (valor *9/5) + 32;
+        String fa = String.valueOf(f);
+        Toast.makeText(this,fa, Toast.LENGTH_SHORT).show();
 
         Intent intent  = new Intent(Main2Activity.this,
                 Main3Activity.class);
         startActivity(intent);
 
+        Bundle bundle = new Bundle();
+        bundle.putString("farenheit",fa);
+        Intent intent1 = new Intent(Main2Activity.this, Main3Activity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
 
 
     }

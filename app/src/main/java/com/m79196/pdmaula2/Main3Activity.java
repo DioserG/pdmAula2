@@ -5,8 +5,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class Main3Activity extends AppCompatActivity {
+
+    Intent intent = getIntent();
+    String valor = intent.getStringExtra("farenheit");
+
+    public void setValor(String valor) {
+        this.valor = valor;
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
