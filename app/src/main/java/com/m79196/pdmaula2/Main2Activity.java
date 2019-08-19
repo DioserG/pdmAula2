@@ -82,12 +82,5 @@ public class Main2Activity extends AppCompatActivity {
                 Main3Activity.class);
         startActivity(intent);
 
-        Bundle bundle = new Bundle();
-        bundle.putString("farenheit",fa);
-        Intent intent1 = new Intent(Main2Activity.this, Main3Activity.class);
-        intent.putExtras(bundle);
-        startActivity(intent);
-
-
     }
 }
